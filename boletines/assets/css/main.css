@@ -1,0 +1,139 @@
+html{
+	font-family: 'Indie Flower', cursive;
+}
+a{
+	text-decoration: none;
+	color: #995599;
+}
+.titulos{
+	text-transform: uppercase;
+	border-bottom: solid 0.2em;
+	padding-bottom: 2%;
+	text-align: center;
+}
+
+.parrafo{
+	text-indent: 1em;
+	padding: 1%;
+	line-height: 1.8em;
+
+}
+.equipos{
+	min-width: 20%;
+	max-width: 40%; 
+
+	float: left;
+	margin-right: 3%;
+}
+.datos{
+	margin-top: 50px;
+}
+.container{
+	background: #2C3E50;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.content{
+	max-height: 550px;
+	max-width: 600px;
+	height: 100%;
+	width: 100%;
+	background-color:white;
+	box-shadow: 0 3% 6% rgba(0,0,0,0.16), 0 3% 6% rgba(0,0,0,0.24);
+	padding: 1em;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+td{
+	display: block;
+	width: auto;
+}
+th{
+	display: none;
+}
+td:nth-of-type(1){
+	color:  #4286f4;
+	font-size: 1.5em;
+	font-weight: bold;
+
+}
+
+table{
+	width: 100%;
+	border-spacing: 0;
+}
+
+.table td, .table th{
+	padding: 1em;
+	text-align: left;
+}
+.fas, .far{
+	color: #ffc400;
+}
+table tr:nth-child(even){
+	background-color: #dee4ed;
+}
+.numero{
+	padding: 1.5%;
+	background-color: red;
+	color: #fff;
+	border-radius: 12%;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+.actions{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
+.close{
+	font-family: Arial;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #dee4ed;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 3px 6px black;
+
+}
+a:hover{
+		opacity: 0.6;
+}
+a:focus{
+	background-color: red;
+}
+@media(min-width:900px){
+	.content{
+		padding: 1.5em;
+	}
+	td{
+		display: table-cell;
+		width: auto;
+	}
+	th{
+		display: table-cell;
+	}
+	td:nth-of-type(1){
+		color:  #4286f4;
+		font-size: 1.5em;
+		font-weight: bold;
+
+	}
+
+}
+
+@media(min-height: 550px;){
+	.content{
+		height: 550px;
+	}
+}
