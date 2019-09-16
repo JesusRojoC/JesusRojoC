@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #31393b;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;    
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(10, 62, 75,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #f5e9e9;
+}
+
+button:hover {
+    background-color: rgba(10, 62, 75,0.8);
+}
+
+.image{
+    width: 100%;
+    height: 200px;
+    background-image: url("imgs/new-york.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+main{
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 100%;
+}
+
+.imgs{
+    width: 100%;
+}
+
+section h1{
+    text-transform: uppercase;
+    font-size: 33px;
+    color: rgba(10, 62, 75,1);
+    text-align: center;
+    margin-bottom: 2%;
+}
+#main_p{
+    margin-top: 10px;
+    font-size: 28px;
+    border-bottom:2px solid #78788c;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+footer {
+    margin-top: 2%;
+    background-color:rgba(10, 62, 75,1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+  }
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    text-align: center;
+}
+.form{
+    width:340px;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+}
+h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:rgba(10, 62, 75,1);;
+    border-bottom:3px solid #78788c;
+}
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a;
+}
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    border:2px solid;
+    cursor:pointer;
+    transition:all .3s;
+}
+
+main form div{
+    content:'Hi';
+    bottom:-15px;
+    right:-20px;
+    background:#50505a;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000;
+}
+
+span{
+    margin:0 5px 0 15px;
+}
+
+main div form div{
+    display: flex;
+    align-content: center;
+}
+h3{
+    color: rgba(10, 62, 75,1);
+    margin-top: 0;
+    margin-left: 4%;
+}
+section h3, p{
+    margin-left: 10%;
+}
+
+@media (max-width: 900px){
+    section h1{
+        text-transform: uppercase;
+        font-size: 25px;
+        color: rgba(10, 62, 75,1);
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    #main_p{
+        margin-top: 10px;
+        font-size: 20px;
+        border-bottom:2px solid #78788c;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+    }
+    h2{
+        margin:10px 0;
+        padding-bottom:10px;
+        width:180px;
+        color:rgba(10, 62, 75,1);;
+        border-bottom:3px solid #78788c;
+        font-size: 20px;
+    }
+    
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 10%;    
+    }
+    
+    li, a, button {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .form{
+        width:240px;
+        height:340px;
+        padding:20px 30px;
+        max-width:calc(100vw - 40px);
+        box-sizing:border-box;
+    }
+    main form div{
+        content:'Hi';
+        bottom:-15px;
+        right:-20px;
+        width:220px;
+        padding:10px 1px 10px 0;
+        border-radius:6px;
+        font-size:10px;
+        box-shadow:5px 5px 20px -7px #000;
+    }
+    footer {
+        margin-top: 20%;
+        background-color:rgba(10, 62, 75,1);
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        height: 5%;
+      }
+}
