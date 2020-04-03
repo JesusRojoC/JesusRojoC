@@ -1,0 +1,14 @@
+body{
+    background-color: #FDEDEC;
+}
+
+.container{
+    margin: 10%;
+    max-width: 75%;
+    
+}
+
+.fotos{
+    max-width: 75%;
+    margin: 2%;
+}
